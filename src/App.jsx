@@ -13,12 +13,14 @@ function App() {
       <BrowserRouter>
         <Navbar/>
         
-        <Routes>
-           <Route path="/" element={<Home/>}/>
-           <Route path="/services" element={<Services/>}/>
-           <Route path="/gallery" element={<Gallery/>}/>
-           <Route path="/contact" element={<Contact/>}/>
-        </Routes>
+        <div className=' relative top-20'>
+          <Routes >
+             <Route path="/" element={<Home/>}/>
+             <Route path="/services" element={<Services/>}/>
+             <Route path="/gallery" element={<Gallery/>}/>
+             <Route path="/contact" element={<Contact/>}/>
+          </Routes>
+        </div>
       </BrowserRouter>
     </>
   )
