@@ -5,6 +5,7 @@ import Card from '../component/Card'
 import Hairwash from "../assets/Hairwash.jpg";
 import Wax from "../assets/Wax.jpg";
 import Skincare from "../assets/Skincare.png";
+import Testimonial from '../component/Testimonial';
 const Home = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const Home = () => {
         <Card img={Hairwash} description={"hairWash"}/>
         <Card img={Wax} description={"Wax"}/>
         <Card img={Skincare} description={"Skin Care"}/>
+        <Testimonial/>
     </div>
   )
 }
