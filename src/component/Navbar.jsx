@@ -10,7 +10,7 @@ const Navbar = () => {
         // window.location.pathname === "/services" ? document.title = "Services" : window.location.pathname === "/gallery" ? document.title = "Gallery" : window.location.pathname === "/contact" ? document.title = "Contact" : document.title = "Home"
     }, [location.pathname])
   return (
-    <header className="shadow-md fixed w-full md:h-20  h-14 bg-nutral  ">
+    <header className="shadow-md fixed w-full md:h-20  h-14  backdrop-blur-3xl   z-20  ">
       <div className={`flex flex-row justify-between       `}>
         <div className=" relative md:top-2 top-3  xl:left-20 flex-shrink-0 ">
           <NavLink to="/">

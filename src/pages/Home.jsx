@@ -4,7 +4,7 @@ import Slide from '../component/Slide'
 const Home = () => {
   return (
     <div className=''>
-        <Slide className=" relative top-40"/>
+        <Slide className=" "/>
     </div>
   )
 }
