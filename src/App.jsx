@@ -9,11 +9,11 @@ import Navbar from './component/Navbar';
 function App() {
  
   return (
-    <>
-      <BrowserRouter>
+    < div className=' bg-nutral h-screen overflow-x-hidden'>
+      <BrowserRouter >
         <Navbar/>
         
-        <div className=' relative top-20'>
+        <div className='  relative top-16 md:top-28 pt-1'>
           <Routes >
              <Route path="/" element={<Home/>}/>
              <Route path="/services" element={<Services/>}/>
@@ -22,7 +22,7 @@ function App() {
           </Routes>
         </div>
       </BrowserRouter>
-    </>
+    </div>
   )
 }
 
