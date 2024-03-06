@@ -3,8 +3,8 @@ import Slide from '../component/Slide'
 
 const Home = () => {
   return (
-    <div className=''>
-        <Slide className=" "/>
+    <div >
+        <Slide />
     </div>
   )
 }
