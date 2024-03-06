@@ -36,9 +36,9 @@ const Navbar = () => {
                             <NavLink to="/contact">Contact us </NavLink>
                           </li>
             </div>
-            <button className="bg-black text-white rounded-sm md:text-base  text-sm w-24 p-1   ">
+            <NavLink to="/booknow" className="bg-black text-white rounded-sm md:text-base text-sm w-24 pl-3 p-1">
               Book Now
-            </button>{" "}
+            </NavLink>
             {/* this is the end of right side */}
           </ul>
         </nav>
