@@ -14,7 +14,7 @@ const Contact = () => {
                 your beauty journey as serene as possible.
               </div>
             </div>
-            <div className="address  relative left-7  ">
+            <div className="address  relative left-9   font-thin ">
               <div> Amalia, thiruvalla 81063, Kerala</div>
               <div> info@amaliabeauty.com</div>
               <div> (629) 555-0129</div>
