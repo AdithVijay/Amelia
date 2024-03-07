@@ -9,10 +9,10 @@ import Testimonial from '../component/Testimonial';
 import Vedio from '../component/Vedio';
 const Home = () => {
   return (
-    <div>
-        <Slide/>
-        
-        <div className=' mb-10'>  
+
+    <div className=''>
+        <Slide className=" "/>
+      <div className=' mb-10'>  
             <NavLink to="/services" className="bg-black text-white ml-6 ">
               Explore Services
             </NavLink>
@@ -21,6 +21,7 @@ const Home = () => {
         <Card img={Wax} description={"Wax"}/>
         <Card img={Skincare} description={"Skin Care"}/>
         <Testimonial/>
+
         <Vedio/>
 
     </div>
