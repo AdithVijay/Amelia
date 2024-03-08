@@ -21,8 +21,8 @@ const Home = () => {
         
       </div>
 
-      <div className="   my-4 flex justify-center  ">
-        <div className=" flex w-[70%] gap-5  justify-around ">
+      <div className="   my-4 flex  justify-center  ">
+        <div className=" flex gap-5  justify-around ">
           <Card img={Hairwash} description={"HairWash"} />
           <Card img={Wax} description={"Wax"} />
           <Card img={Skincare} description={"Skin Care"} />
