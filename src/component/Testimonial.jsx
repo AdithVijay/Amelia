@@ -5,13 +5,14 @@ import logo6 from "../assets/logo6.webp";
 import logo7 from "../assets/logo7.webp";
 import logo8 from "../assets/logo8.webp";
 import logo9 from "../assets/logo9.jpg";
+import { FaRegArrowAltCircleLeft,FaRegArrowAltCircleRight } from "react-icons/fa";
 
 const Testimonial = () => {
 const slidedata = [
     {
         img: logo4,
         name: "John | Doe",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed non mauris vitae erat consequat auctor eu in elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel modi similique, inventore alias sed, facere cupiditate perferendis nulla dolorum tenetur? Iure, voluptatibus minima itaque nesciunt accusantium nulla quo voluptate Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ullam velit aperiam non, exercitationem laudantium voluptatum beatae, consectetur ipsa neque esse, tempora illo enim quidem iusto quam ducimus a ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel modi similique, inventore alias sed, facere cupiditate perferendis nulla dolorum tenetur? Iure, voluptatibus minima itaque nesciunt accusantium nulla quo voluptate Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ullam velit aperiam non, exercitationem laudantium voluptatum beatae, consectetur ipsa neque esse, tempora illo enim quidem iusto quam ducimus a ab!"
     },
     {
         img: logo5,
@@ -52,19 +53,21 @@ const slidedata = [
     setfirst((prev) => (prev === 0 ? slidedata.length - 1 : prev - 1));
   }
   return (
-    <div className="relative top-12  flex ">
-      <div>
-        <img src={slidedata[first].img} alt="" />
+    <div className="relative top-12  lg:right-40 flex md:flex-row flex-col   pb-28 ring  ">
+      <div className="  ring  flex justify-center md:justify-stretch">
+        <img src={slidedata[first].img} alt=""  className=" relative lg:left-[48%]  lg:w-[50%]  w-[90%]   "/>
       </div>
-      <div className="">
-        <h1>{slidedata[first].name}</h1>
-        <p>{slidedata[first].desc}</p>
-        <button className=" " onClick={plus}>
-          {"< "}
-        </button>
-        <button className=" " onClick={minus}>
-          {" > "}
-        </button>
+      <div className=" md:w-[40%] flex flex-col gap-9  items-center  pt-2    ">
+        <h1 className="text-2xl lg:text-4xl ">{slidedata[first].name}</h1>
+        <p className=" font-thin  w-[90%]  md:text-justify ">{slidedata[first].desc}</p>
+        <div className=" flex gap-9 text-4xl   text-slate-600 opacity-80      ">
+          <button className=" " onClick={plus}>
+           <FaRegArrowAltCircleLeft/>
+          </button>
+          <button className=" " onClick={minus}>
+            <FaRegArrowAltCircleRight/>
+          </button>
+        </div>
       </div>
     </div>
   );
