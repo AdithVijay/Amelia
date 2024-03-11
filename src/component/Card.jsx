@@ -6,7 +6,7 @@ const Card = (prop) => {
     <div>
       <div>
         <img
-          className=" md:h-80  h-24   "
+          className=" md:h-80 xl:h-96    h-44  "
           src={prop.img}
           alt=""
         />

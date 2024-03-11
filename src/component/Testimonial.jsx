@@ -53,13 +53,13 @@ const slidedata = [
     setfirst((prev) => (prev === 0 ? slidedata.length - 1 : prev - 1));
   }
   return (
-    <div className="relative top-12  lg:right-40 flex md:flex-row flex-col   pb-28 ring  ">
-      <div className="  ring  flex justify-center md:justify-stretch">
-        <img src={slidedata[first].img} alt=""  className=" relative lg:left-[48%]  lg:w-[50%]  w-[90%]   "/>
+    <div className="relative top-12  lg:right-40 flex md:flex-row flex-col   pb-28 w-full    md:justify-center ">
+      <div className="   flex justify-center md:justify-end   overflow-hidden">
+        <img src={slidedata[first].img} alt=""  className=" relative   lg:w-[60%]  w-[90%]  "/>
       </div>
-      <div className=" md:w-[40%] flex flex-col gap-9  items-center  pt-2    ">
+      <div className=" md:w-[80%] lg:w-[40%] flex flex-col gap-6  items-center  pt-2     ">
         <h1 className="text-2xl lg:text-4xl ">{slidedata[first].name}</h1>
-        <p className=" font-thin  w-[90%]  md:text-justify ">{slidedata[first].desc}</p>
+        <p className=" font-thin  lg:text-xl w-[90%]  md:text-justify   ">{slidedata[first].desc}</p>
         <div className=" flex gap-9 text-4xl   text-slate-600 opacity-80      ">
           <button className=" " onClick={plus}>
            <FaRegArrowAltCircleLeft/>
