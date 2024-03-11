@@ -22,10 +22,10 @@ const Home = () => {
         
       </div>
 
-      <div className="   my-4 flex  justify-center  ">
-      <div className="grid grid-cols-2 md:grid-cols-4   md:gap-5 xl:gap-0 px-2 ">
+      <div className="   my-4 flex  justify-center   ">
+      <div className="grid grid-cols-2 md:grid-cols-4 space-x-4  ">
   <Card img={Hairwash} description={"HairWash"} />
-  <Card img={Wax} description={"Wax"} />
+  <Card img={Wax} description={"Waxing"} />
   <Card img={Skincare} description={"Skin Care"} />
   <Card img={Wax} description={"Wax"} />
 </div>
@@ -33,7 +33,7 @@ const Home = () => {
       </div>
       <Testimonial className=" " />
 
-      <Vedio />
+      <Vedio  />
       <Footer/>
     </div>
   );

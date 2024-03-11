@@ -37,8 +37,8 @@ const Footer = () => {
             <div className=" pb-4 flex items-center gap-1"><FaSquareFacebook /> Facebook</div>
           </div>
             <div className="flex flex-col md:items-stretch items-center">
-            <div className=" pb-4  text-primary">Thiruvalla</div>
-            <div className=" pb-4">Location</div>
+            <div className=" pb-4  text-primary">Location</div>
+            <div className=" pb-4">Thiruvalla </div>
             <div className=" pb-4">Near ByPass</div>
             </div>
             <div className="flex flex-col md:items-stretch items-center">

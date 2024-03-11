@@ -11,7 +11,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  visibility: hidden; /* doesn't seem to work */
+  visibility: hidden; 
 }
 
 ::-webkit-scrollbar-thumb {
