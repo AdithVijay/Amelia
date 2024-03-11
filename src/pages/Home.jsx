@@ -15,7 +15,7 @@ const Home = () => {
       <div  className="  text-2xl flex justify-center md:gap-20 my-16 items-center ">
         <div className="w-[35%] text-balance ">
           Enhance your inner radiance at our{" "}
-          <span className=" text-primary">beauty sanctuary</span> and let your
+          <span className="text-primary">beauty sanctuary</span> and let your
           true beauty shine.
         </div>
         <NavLink to="/services"> <button className=" bg-black text-white p-2 text-lg w-40 h-10">Explore Services</button></NavLink>
