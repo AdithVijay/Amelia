@@ -7,6 +7,7 @@ import Wax from "../assets/Wax.jpg";
 import Skincare from "../assets/Skincare.png";
 import Testimonial from "../component/Testimonial";
 import Vedio from "../component/Vedio";
+import Footer from "../component/Footer";
 const Home = () => {
   return (
     <div className="">
@@ -33,6 +34,7 @@ const Home = () => {
       <Testimonial className=" " />
 
       <Vedio />
+      <Footer/>
     </div>
   );
 };
