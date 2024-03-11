@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import logo4 from "../assets/logo4.webp";
-import logo5 from "../assets/logo5.webp";
-import logo6 from "../assets/logo6.webp";
+import logo4 from "../assets/t1.jpg";
+import logo5 from "../assets/t2.jpg";
+import logo6 from "../assets/t3.jpg";
 import logo7 from "../assets/logo7.webp";
 import logo8 from "../assets/logo8.webp";
-import logo9 from "../assets/logo9.jpg";
+import logo9 from "../assets/t1.jpg";
 import { FaRegArrowAltCircleLeft,FaRegArrowAltCircleRight } from "react-icons/fa";
 
 const Testimonial = () => {
@@ -53,13 +53,13 @@ const slidedata = [
     setfirst((prev) => (prev === 0 ? slidedata.length - 1 : prev - 1));
   }
   return (
-    <div className="relative top-12  lg:right-40 flex md:flex-row flex-col   pb-28 ring  ">
-      <div className="  ring  flex justify-center md:justify-stretch">
-        <img src={slidedata[first].img} alt=""  className=" relative lg:left-[48%]  lg:w-[50%]  w-[90%]   "/>
+    <div className="relative top-12  lg:right-40 flex md:flex-row flex-col   pb-28 w-full    md:justify-center ">
+      <div className="   flex justify-center md:justify-end  ">
+        <img src={slidedata[first].img} alt=""  className=" relative  max-w-[90%] lg:max-w-[60%] h-auto  object-cover "/>
       </div>
-      <div className=" md:w-[40%] flex flex-col gap-9  items-center  pt-2    ">
+      <div className=" md:w-[80%] lg:w-[40%] flex flex-col gap-6  items-center  pt-2     ">
         <h1 className="text-2xl lg:text-4xl ">{slidedata[first].name}</h1>
-        <p className=" font-thin  w-[90%]  md:text-justify ">{slidedata[first].desc}</p>
+        <p className=" font-thin  lg:text-xl w-[90%]  md:text-justify  myfont ">{slidedata[first].desc}</p>
         <div className=" flex gap-9 text-4xl   text-slate-600 opacity-80      ">
           <button className=" " onClick={plus}>
            <FaRegArrowAltCircleLeft/>

@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo1 from "../assets/11.jpg";
-import logo2 from "../assets/logo2.jpg";
-import logo3 from "../assets/logo3.jpg";
+import logo2 from "../assets/s2.jpg";
+import logo3 from "../assets/s3.jpg";
 import { IoIosArrowDropleft } from "react-icons/io";
 import { IoIosArrowDropright } from "react-icons/io";
 
@@ -19,6 +19,13 @@ const Slide = () => {
         },
     ]
     const [first, setfirst] = useState(0)
+    useEffect(() => {
+        setTimeout(()=>{
+            setfirst((prev)=>(prev+1)%slidedata.length)
+        },5500)
+    }, [first])
+    
+
         function plus(){    
             setfirst((prev)=>(prev+1)%slidedata.length)
         }

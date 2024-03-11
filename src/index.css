@@ -1,3 +1,24 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+*{
+    scrollbar-color:   #fb7a01d5 #FFFBF2;
+   
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  visibility: hidden; 
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #FB7A01;
+}
+
+::-webkit-scrollbar:window-inactive {
+    visibility: hidden;
+}

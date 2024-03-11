@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter >
         <Navbar/>
         
-        <div className='  relative top-16 md:top-28 pt-1'>
+        <div className='  relative top-14 md:top-20 pt-1'>
           <Routes >
              <Route path="/" element={<Home/>}/>
              <Route path="/services" element={<Services/>}/>
