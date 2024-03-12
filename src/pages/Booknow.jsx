@@ -17,8 +17,8 @@ const Booknow = () => {
             <input className=" md:w-[40%] w-[80%] min-h-10 border border-slate-500 pl-4" type="text" placeholder="Your NAme"/>
           </div>
           <div className="  ring-red-700 w-full flex justify-around flex-col md:flex-row md:gap-0 gap-9 items-center ">
-            <input className=" md:w-[40%] w-[80%] min-h-10  border border-slate-500 pl-4" type="text" placeholder="Your NAme"/>
-            <input className=" md:w-[40%] w-[80%] min-h-10 border border-slate-500 pl-4" type="text" placeholder="Your NAme"/>
+            <input className=" md:w-[45%] w-[80%] min-h-10  border border-slate-500 pl-4" type="text" placeholder="Your NAme"/>
+            <input className=" md:w-[45%] w-[80%] min-h-10 border border-slate-500 pl-4" type="text" placeholder="Your NAme"/>
           </div>
           <div className="  ring-red-700 w-full flex justify-around flex-col md:flex-row md:gap-0 gap-9 items-center">
             <input className=" md:w-[40%] w-[80%] min-h-10  border border-slate-500 pl-4" type="text" placeholder="Your NAme"/>
