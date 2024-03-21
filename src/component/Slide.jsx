@@ -20,9 +20,10 @@ const Slide = () => {
     ]
     const [first, setfirst] = useState(0)
     useEffect(() => {
-        setTimeout(()=>{
+        const timer=setTimeout(()=>{
             setfirst((prev)=>(prev+1)%slidedata.length)
         },5500)
+        return () => clearTimeout(timer);
     }, [first])
     
 
@@ -33,9 +34,9 @@ const Slide = () => {
             setfirst((prev)=> prev === 0 ? slidedata.length - 1 : prev - 1)
         }
   return (
-    <div className=' w-full    '>
+    <div className=' w-full select-none    '>
         <div className=' relative ring-neutral-900   w-[100%] lg:w-[100%] mx-auto  '>
-          <img src={slidedata[first].img} alt=""  className=' w-[100%]  mx-auto   object-cover   max-h-[40rem] ' />
+          <img src={slidedata[first].img} alt=""  className=' w-[100%] mx-auto   object-cover   max-h-[40rem] ' />
           <span className=' flex absolute md:text-2xl  z-10 top-[45%]     justify-around gap-[40%]     my-auto    w-[100%]     text-slate-600 opacity-80   mix-blend-screen '>
               <button onClick={plus} className=' relative text-2xl md:text-4xl  lg:text-5xl'><IoIosArrowDropleft  />  </button>
               <button className=' text-2xl md:text-4xl  lg:text-5xl' onClick={minus}> <IoIosArrowDropright/> </button>

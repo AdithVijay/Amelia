@@ -6,6 +6,7 @@ import logo7 from "../assets/logo7.webp";
 import logo8 from "../assets/logo8.webp";
 import logo9 from "../assets/t1.jpg";
 import { FaRegArrowAltCircleLeft,FaRegArrowAltCircleRight } from "react-icons/fa";
+import { motion } from "framer-motion"
 
 const Testimonial = () => {
 const slidedata = [
@@ -53,23 +54,42 @@ const slidedata = [
     setfirst((prev) => (prev === 0 ? slidedata.length - 1 : prev - 1));
   }
   return (
-    <div className="relative top-12  lg:right-40 flex md:flex-row flex-col   pb-28 w-full    md:justify-center ">
+    <motion.div className="relative top-12  lg:right-40 flex md:flex-row flex-col   pb-28 w-full    md:justify-center  "
+ 
+   initial={{ opacity: 0,y: 300 }}
+       whileInView={{ opacity: 1 ,y: 0}}
+       viewport={{ once: true,amount: 0.1, }}
+        transition={{ duration: 0.2 }}
+  
+
+
+    >
       <div className="   flex justify-center md:justify-end  ">
-        <img src={slidedata[first].img} alt=""  className=" relative  max-w-[90%] lg:max-w-[60%] h-auto  object-cover "/>
+        <motion.img src={slidedata[first].img} alt=""  className=" relative  max-w-[90%] lg:max-w-[60%] h-auto  object-cover "  
+           initial={{ x: -3000,opacity: 0.5, borderRadius: 9 ,}}
+           transition={{ duration: 2.5, type: "spring", stiffness: 20,delay:1.5}}
+        animate={{
+       opacity: 1,x:0,rotate: [90,70,50,30,10,0],
+        }}/>
       </div>
-      <div className=" md:w-[80%] lg:w-[40%] flex flex-col gap-6  items-center  pt-2     ">
+      <motion.div 
+         initial={{ opacity: 0,y: 300,color:"orange"}}
+         whileInView={{ opacity: 1 ,y: 0,color:"black"}}
+         viewport={{ once: true,amount: 0.2,  }}
+          transition={{ duration: 0.9 }}
+      className=" md:w-[80%] lg:w-[40%] flex flex-col gap-6  items-center  pt-2      ">
         <h1 className="text-2xl lg:text-4xl ">{slidedata[first].name}</h1>
-        <p className=" font-thin  lg:text-xl w-[90%]  md:text-justify  myfont ">{slidedata[first].desc}</p>
+        <p className="  font-thin  lg:text-xl w-[90%]  md:text-justify  myfont   ">{slidedata[first].desc}</p>
         <div className=" flex gap-9 text-4xl   text-slate-600 opacity-80      ">
           <button className=" " onClick={plus}>
-           <FaRegArrowAltCircleLeft/>
+           <FaRegArrowAltCircleLeft className="" />
           </button>
           <button className=" " onClick={minus}>
             <FaRegArrowAltCircleRight/>
           </button>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
