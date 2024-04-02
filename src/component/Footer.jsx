@@ -1,61 +1,69 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import { NavLink } from "react-router-dom";
-import { FaInstagram } from "react-icons/fa6";
-import { FaSquareFacebook } from "react-icons/fa6";
+import { CiInstagram } from "react-icons/ci";
+import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div>
-      <div className="   min-h-[20rem]    bg-[#F8F4EF]">
+        <div className='parent bg-yellow-300  min-h-[22rem]  flex flex-col  justify-center '>
+            <div className=' flex justify-center md:pb-5  pt-10'>
+                <div className='top flex justify-around  flex-col md:flex-row md:gap-36 gap-5 items-center'>
+                
+                        <div className='left flex gap-4'>
+                        <NavLink to="/"  className="font-Cheesebase text-xl ">Home</NavLink>
+                        <NavLink to="/about"  className="font-Cheesebase text-xl ">About</NavLink>
+                        <NavLink to="/menu"  className="font-Cheesebase text-xl ">Menu</NavLink>
+                        <NavLink to="/contact"  className="font-Cheesebase text-xl ">Contact us</NavLink>
+                        </div>
+                        <div className='right flex gap-3 '>
+                            <div >
+                                <CiInstagram className=' size-8' />
+                            </div>
+                            <div>
+                                <FaFacebook  className=' size-8'/>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <hr />
+            <div className='down flex  md:flex-row  flex-col justify-center items-center md:gap-10 gap-5 pt-5 pb-10'>
 
-        <div className="    flex rounded-lg md:gap-14 xl:gap-40 backdrop-blur-[3px]
-md:flex-row flex-col md:items-stretch items-center md:justify-center md:pt-9  ">
-          <div className="md:w-[30%] w-[50%] ">
-            <img src={logo} alt="" />
-          </div>
-          <div className=" lg:text-2xl text-xl flex flex-row  md:gap-14 ">
-            <div className=" flex flex-col md:flex-row md:gap-14 gap-2">
-                    {/*  */}
-                  <div className=" flex flex-col   ">
-                    <div className="pb-4 text-primary">Site Map</div>
-                    <NavLink to="/" className="pb-4  ">
-                      Home
-                    </NavLink>
-                    <NavLink to="/services" className="pb-4 ">
-                      Services
-                    </NavLink>
-                    <NavLink to="/gallery" className="pb-4 ">
-                      Gallery
-                    </NavLink>
-                    <NavLink to="/contactus" className="pb-4 ">
-                      Contact us
-                    </NavLink>
-                  </div>
-                  <div className="flex flex-col md:items-stretch items-center">
-                    <div className=" pb-4  text-primary">Follow US</div>
-                    <div className=" pb-4 flex items-center gap-1"> <FaInstagram />Instagram</div>
-                    <div className=" pb-4 flex items-center gap-1"><FaSquareFacebook /> Facebook</div>
-                  </div>
-            </div>
-            <div className=" flex flex-col md:flex-row  md:gap-14 gap-2"> 
-            {/*  */}
-                <div className="flex flex-col md:items-stretch  items-center   ">
-                <div className=" pb-4  text-primary  self-center">Location</div>
-                <div className=" pb-4 "> Kaimamannil Building </div>
-                <div className=" pb-4 self-center"> Near public Stadium</div>
-                <div className=" pb-4 self-center"> Bypass Road </div>
-                <div className=" pb-4 self-center">Thiruvalla</div>
+                <div className='left md:w-[30%] w-[90%]'>
+                    <div className=' font-creamcheese text-4xl pb-3 '>
+                       Amelia Beauty 
+                    </div>
+                    <div className=''>
+                         Experience the joy of savouring healthy, hygienic foods at Burger Lounge by Grapa Foods. Our excellent burgers, crafted with premium ingredients, promise an exceptional culinary experience. Immerse yourself in quality, sustainability, and the pure delight of every bite. Taste the difference and embrace the happiness of dining at Grapa Burger Lounge.
+                    </div>
                 </div>
-                <div className="flex flex-col md:items-stretch  items-center ">
-                <div className=" pb-4  text-primary">Legal</div>
-                <div className=" pb-4">Privacy Policy</div>
-                <div className=" pb-4">Terms & Condition</div>
+
+                <div>
+                    <img className=' w-[200px]' src={logo} alt="" />
+                </div>
+
+                <div className='right md:w-[30%] w-[90%] text-pretty'>
+                    <div className=' text-3xl pb-4'>
+                        Contact Adress
+                    </div>
+                    <div>
+                    Kaimamannil Building,Near public Stadium,Bypass Road,Thiruvalla
+                    </div>
+                    <div className=' pt-3'> 
+                        call us
+                    </div>
+                    <div>
+                        9447271120
+                    </div>
+                    <div className=' pt-3'>
+                        email
+                    </div>
+                    <div className=' mb-10'>
+                    beautyspaamelia@gmail. com                    </div>
                 </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
   );
 };

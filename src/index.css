@@ -2,6 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+
 *{
     scrollbar-color:   #fb7a01d5 #FFFBF2;
     scrollbar-width:thin;

@@ -28,12 +28,12 @@ const Home = () => {
           <span className=" text-primary">beauty sanctuary</span> and let your
           true beauty shine.
         </div>
-        <NavLink to="/services"> <button className=" bg-black text-white p-2 text-sm lg:text-2xl w-70">Explore Services</button></NavLink>
+        <NavLink to="/services"> <button className=" hover:scale-105 transition   duration-500 bg-black text-white p-2 text-sm lg:text-2xl w-70">Explore Services</button></NavLink>
         
       </div>
 </motion.div>
       <div className="   my-4 flex  justify-center   ">
-      <motion.div className="grid grid-cols-2 md:grid-cols-4 space-x-4  "
+      <motion.div className="grid grid-cols-2 md:grid-cols-4 space-x-4  gap-2 "
        initial={{ opacity: 0,y: 300 }}
        whileInView={{ opacity: 1 ,y: 0}}
        viewport={{ once: true,amount: 0.1, }}
@@ -48,6 +48,9 @@ const Home = () => {
 
       </div>
       <Testimonial className=" " />
+
+   
+
 
       <Vedio  />
       <Footer/>
