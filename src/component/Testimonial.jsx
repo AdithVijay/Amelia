@@ -1,76 +1,96 @@
 import React, { useState } from "react";
-import logo4 from "../assets/logo4.webp";
-import logo5 from "../assets/logo5.webp";
-import logo6 from "../assets/logo6.webp";
-import logo7 from "../assets/logo7.webp";
-import logo8 from "../assets/logo8.webp";
-import logo9 from "../assets/logo9.jpg";
-import { FaRegArrowAltCircleLeft,FaRegArrowAltCircleRight } from "react-icons/fa";
+import card1 from "../assets/t1.jpg";
+import card2 from "../assets/t2.jpg";
+import card3 from "../assets/t3.jpg";
+import pic2 from "../assets/logo7.webp";
+import pic3 from "../assets/logo8.webp";
+import pic4 from "../assets/t1.jpg";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
-const Testimonial = () => {
-const slidedata = [
+
+
+
+function App() {
+  const data = [
     {
-        img: logo4,
-        name: "John | Doe",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel modi similique, inventore alias sed, facere cupiditate perferendis nulla dolorum tenetur? Iure, voluptatibus minima itaque nesciunt accusantium nulla quo voluptate Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ullam velit aperiam non, exercitationem laudantium voluptatum beatae, consectetur ipsa neque esse, tempora illo enim quidem iusto quam ducimus a ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel modi similique, inventore alias sed, facere cupiditate perferendis nulla dolorum tenetur? Iure, voluptatibus minima itaque nesciunt accusantium nulla quo voluptate Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ullam velit aperiam non, exercitationem laudantium voluptatum beatae, consectetur ipsa neque esse, tempora illo enim quidem iusto quam ducimus a ab!"
-    },
-    {
-        img: logo5,
-        name: "Jane | Smith",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed non mauris vitae erat consequat auctor eu in elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
-    },
-    {
-        img: logo6,
-        name: "Michael | Johnson",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed non mauris vitae erat consequat auctor eu in elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
-    },
-    {
-        img: logo7,
-        name: "Emily | Davis",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed non mauris vitae erat consequat auctor eu in elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
-    },
-    {
-        img: logo8,
-        name: "David | Wilson",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed non mauris vitae erat consequat auctor eu in elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
-    },
-    {
-        img: logo9,
-        name: "Sarah | Thompson",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed non mauris vitae erat consequat auctor eu in elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
-    },
-    {
-        img: logo6,
-        name: "Robert | Anderson",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed non mauris vitae erat consequat auctor eu in elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
-    },
-];
-  const [first, setfirst] = useState(0);
-  function plus() {
-    setfirst((prev) => (prev + 1) % slidedata.length);
-  }
-  function minus() {
-    setfirst((prev) => (prev === 0 ? slidedata.length - 1 : prev - 1));
-  }
+      img: card1,
+      name: "John | Doe",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel modi similique, inventore alias sed, facere cupiditate perferendis nulla dolorum tenetur? Iure, voluptatibus minima itaque nesciunt accusantium nulla quo voluptate Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ullam velit aperiam non, exercitationem laudantium voluptatum beatae, consectetur ipsa neque esse, tempora illo enim quidem iusto quam ducimus a ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel modi similique, inventore alias sed, facere cupiditate perferendis nulla dolorum tenetur? Iure, voluptatibus minima itaque nesciunt accusantium nulla quo voluptate Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ullam velit aperiam non, exercitationem laudantium voluptatum beatae, consectetur ipsa neque esse, tempora illo enim quidem iusto quam ducimus a ab!"
+  },
+  {
+      img: card2,
+      name: "Jane | Smith",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed non mauris vitae erat consequat auctor eu in elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+  },
+  {
+      img: card3,
+      name: "Michael | Johnson",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed non mauris vitae erat consequat auctor eu in elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+  },
+  {
+      img: pic2,
+      name: "Emily | Davis",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed non mauris vitae erat consequat auctor eu in elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+  },
+  {
+      img: pic2,
+      name: "David | Wilson",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed non mauris vitae erat consequat auctor eu in elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+  },
+  {
+      img: pic3,
+      name: "Sarah | Thompson",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed non mauris vitae erat consequat auctor eu in elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+  },
+  {
+      img: pic4,
+      name: "Robert | Anderson",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed non mauris vitae erat consequat auctor eu in elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+  },
+    
+  ];
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+          breakpoint: 768, // width to change settings
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+  };
   return (
-    <div className="relative top-12  lg:right-40 flex md:flex-row flex-col   pb-28 w-full    md:justify-center ">
-      <div className="   flex justify-center md:justify-end   overflow-hidden">
-        <img src={slidedata[first].img} alt=""  className=" relative   lg:w-[60%]  w-[90%]  "/>
+    <div className='w-3/4 m-auto'>
+      <div className="mt-20">
+      <Slider {...settings}>
+        {data.map((d) => (
+          <div key={d.name} className="h-[500px] text-black rounded-xl">
+            <div className='h-56 flex justify-center items-center rounded-t-xl'>
+              <img src={d.img} alt="" className="h-44 w-44 rounded-full object-cover"/>
+            </div>
+
+            <div className="flex flex-col items-center justify-center gap-4 p-4">
+              <p className="text-xl text-[#8E8E8E]  font-semibold">{d.name}</p>
+              <p className="text-center text-[#8E8E8E] ">{d.desc}</p>
+           
+            </div>
+          </div>
+        ))}
+      </Slider>
       </div>
-      <div className=" md:w-[80%] lg:w-[40%] flex flex-col gap-6  items-center  pt-2     ">
-        <h1 className="text-2xl lg:text-4xl ">{slidedata[first].name}</h1>
-        <p className=" font-thin  lg:text-xl w-[90%]  md:text-justify   ">{slidedata[first].desc}</p>
-        <div className=" flex gap-9 text-4xl   text-slate-600 opacity-80      ">
-          <button className=" " onClick={plus}>
-           <FaRegArrowAltCircleLeft/>
-          </button>
-          <button className=" " onClick={minus}>
-            <FaRegArrowAltCircleRight/>
-          </button>
-        </div>
-      </div>
+      
     </div>
   );
-};
+}
 
-export default Testimonial;
+
+
+export default App;
