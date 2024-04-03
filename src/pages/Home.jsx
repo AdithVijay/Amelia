@@ -25,7 +25,7 @@ const Home = () => {
       <div  className="  text-2xl   lg:text-4xl flex flex-col md:flex-row justify-center md:gap-20 md:my-16 items-center ">
         <div className=" md:w-[45%] md:p-0 p-5  text-center   ">
           Enhance your inner radiance at our{" "}
-          <span className=" text-primary">beauty sanctuary</span> and let your
+          <span className="text-primary">beauty sanctuary</span> and let your
           true beauty shine.
         </div>
         <NavLink to="/services"> <button className=" hover:scale-105 transition   duration-500 bg-black text-white p-2 text-sm lg:text-2xl w-70">Explore Services</button></NavLink>
