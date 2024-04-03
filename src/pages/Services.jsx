@@ -7,6 +7,7 @@ import Hair from '../component/Hair'
 import mainicure from '../assets/manicure1.png'
 import pedicure from '../assets/mainicure.png'
 import MyBook from '../component/MyBook'
+
 const Services = () => {
   const [selectedTab, setSelectedTab] = useState('bridal');
 
