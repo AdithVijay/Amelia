@@ -7,14 +7,14 @@ import { FaFacebook } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-        <div className='parent bg-yellow-300  min-h-[22rem]  flex flex-col  justify-center '>
+        <div className='parent bg-[rgb(255,219,141)] min-h-[22rem]  flex flex-col  justify-center '>
             <div className=' flex justify-center md:pb-5  pt-10'>
                 <div className='top flex justify-around  flex-col md:flex-row md:gap-36 gap-5 items-center'>
                 
                         <div className='left flex gap-4'>
                         <NavLink to="/"  className="font-Cheesebase text-xl ">Home</NavLink>
-                        <NavLink to="/about"  className="font-Cheesebase text-xl ">About</NavLink>
-                        <NavLink to="/menu"  className="font-Cheesebase text-xl ">Menu</NavLink>
+                        <NavLink to="/service"  className="font-Cheesebase text-xl ">Service</NavLink>
+                        <NavLink to="/gallery"  className="font-Cheesebase text-xl ">Gallery</NavLink>
                         <NavLink to="/contact"  className="font-Cheesebase text-xl ">Contact us</NavLink>
                         </div>
                         <div className='right flex gap-3 '>
@@ -27,7 +27,7 @@ const Footer = () => {
                         </div>
                 </div>
             </div>
-            <hr />
+            <div className=" bg-white h-1" />
             <div className='down flex  md:flex-row  flex-col justify-center items-center md:gap-10 gap-5 pt-5 pb-10'>
 
                 <div className='left md:w-[30%] w-[90%]'>

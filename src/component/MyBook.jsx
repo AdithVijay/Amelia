@@ -7,8 +7,8 @@ import menu3 from '../assets/menu/3.png'
 import menu4 from '../assets/menu/4.png'
 function MyBook(props) {
     return (
-        <div  className=" flex justify-center">
-          <HTMLFlipBook width={550} height={750}  showCover={true} className=" mb-3">
+        <div  className=" flex justify-center  m-10">
+          <HTMLFlipBook width={600} height={750}  showCover={true} className=" mb-3">
           
              <img src={menu0} alt=""  />
               <img src={menu1} alt="" />

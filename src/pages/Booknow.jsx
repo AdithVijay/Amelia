@@ -15,10 +15,10 @@ console.log(cdate.toDateString())
     <div className=" ">
       
 
-      <div className="  flex flex-col items-center w-[80%] mx-auto gap-20 ring mb-10">
+      <div className="  flex flex-col items-center w-[80%] mx-auto gap-20  shadow-2xl shadow-orange-200 m-10">
 
         <div className=" flex flex-col gap-3 text-center  relative top-5">
-          <div>Schedule an Appointment</div>
+          <div className="text-4xl">Schedule an Appointment</div>
           <div className=" text-center ">Please fill the form below, it will only take 3 minutes</div>
         </div>
           

@@ -5,6 +5,8 @@ import Card from "../component/Card";
 import Hairwash from "../assets/Hairwash.jpg";
 import Wax from "../assets/Wax.jpg";
 import Skincare from "../assets/Skincare.png";
+import mainicure from '../assets/manicure1.png'
+
 import Testimonial from "../component/Testimonial";
 import Vedio from "../component/Vedio";
 import Footer from "../component/Footer";
@@ -40,19 +42,25 @@ const Home = () => {
         transition={{ duration: 0.2 }}
       
         >
-  <Card img={Hairwash} description={"HairWash"} />
+
+  <Card img={Hairwash} description={"HairCare"} />
   <Card img={Wax} description={"Waxing"} />
   <Card img={Skincare} description={"Skin Care"} />
-  <Card img={Wax} description={"Wax"} />
+  <Card img={mainicure} description={"Nail Treatments"} />
 </motion.div>
 
+      </div>
+      <div className="flex justify-center relative top-10  ">
+        <div className=" md:text-4xl text-4xl font-bold  "> What Our Customers  <span className=' text-primary font-extrabold '>Speeks</span></div>
       </div>
       <Testimonial className=" " />
 
    
 
-
-      <Vedio  />
+      <div className="flex justify-center relative top-20  pb-32  ">
+        <div className=" md:text-4xl text-4xl font-bold  ">Here's a Quick Video Introducing  <span className=' text-primary font-extrabold '> Us.</span></div>
+      </div>
+      <div className=" mb-10"><Vedio className=" "  /></div>
       <Footer/>
     </div>
   );

@@ -17,7 +17,7 @@ function App() {
     {
       img: card1,
       name: "John | Doe",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel modi similique, inventore alias sed, facere cupiditate perferendis nulla dolorum tenetur? Iure, voluptatibus minima itaque nesciunt accusantium nulla quo voluptate Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ullam velit aperiam non, exercitationem laudantium voluptatum beatae, consectetur ipsa neque esse, tempora illo enim quidem iusto quam ducimus a ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel modi similique, inventore alias sed, facere cupiditate perferendis nulla dolorum tenetur? Iure, voluptatibus minima itaque nesciunt accusantium nulla quo voluptate Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ullam velit aperiam non, exercitationem laudantium voluptatum beatae, consectetur ipsa neque esse, tempora illo enim quidem iusto quam ducimus a ab!"
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel modi similique, inventore alias sed, facere cupiditate perferendis nulla dolorum tenetur? Iure, "
   },
   {
       img: card2,
