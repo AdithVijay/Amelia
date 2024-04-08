@@ -53,11 +53,12 @@ const Navbar = () => {
         </nav>
         
       </div>
-      <div className={`${open?" visible flex  flex-col items-center m-7 text-xl":" invisible"}`} >
+      <div className={`${open?" visible flex  flex-col items-center  m-6 text-xl":" invisible"}`} >
       <NavLink to="/" onClick={menu} className={`${mylocation === "/" ? "text-primary" : ""}`}>Home </NavLink>
       <NavLink to="/services" onClick={menu}   className={`${mylocation === "/services" ? "text-primary" : ""}`}>Service </NavLink>
       <NavLink to="/gallery" onClick={menu}   className={`${mylocation === "/gallery" ? "text-primary" : ""}`}>Gallery </NavLink>
       <NavLink to="/contact"  onClick={menu}  className={`${mylocation === "/contact" ? "text-primary" : ""}`}>Contact us </NavLink>
+      <NavLink to="/contact"  onClick={menu}  className={`${mylocation === "/booknow" ? "text-primary" : ""}`}>Book Now </NavLink>
       </div>
     </header>
   );

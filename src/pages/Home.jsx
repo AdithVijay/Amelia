@@ -51,14 +51,14 @@ const Home = () => {
 
       </div>
       <div className="flex justify-center relative top-10  ">
-        <div className=" md:text-4xl text-4xl font-bold  "> What Our Customers  <span className=' text-primary font-extrabold '>Speeks</span></div>
+        <div className=" md:text-4xl text-2xl font-bold  "> What Our Customers  <span className=' text-primary font-extrabold '>Speeks</span></div>
       </div>
       <Testimonial className=" " />
 
    
 
-      <div className="flex justify-center relative top-20  pb-32  ">
-        <div className=" md:text-4xl text-4xl font-bold  ">Here's a Quick Video Introducing  <span className=' text-primary font-extrabold '> Us.</span></div>
+      <div className="flex justify-center relative top-20  pb-32 ">
+        <div className=" md:text-4xl text-xl font-bold  ">Here's a Quick Video Introducing  <span className=' text-primary font-extrabold '> Us.</span></div>
       </div>
       <div className=" mb-10"><Vedio className=" "  /></div>
       <Footer/>
