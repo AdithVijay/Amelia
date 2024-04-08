@@ -29,8 +29,10 @@ console.log(cdate.toDateString())
             <input className=" md:w-[40%] w-[80%] min-h-10 border border-slate-500 pl-4" type="tel" placeholder="Contact Number"/>
           </div>
           <div className="  ring-red-700 w-full flex justify-around flex-col md:flex-row md:gap-0 gap-9 items-center ">
+
             <input className=" md:w-[40%] w-[80%] min-h-10  border border-slate-500 pl-4" type="email" placeholder="email"/>
             <input type="text" placeholder="Service name" className=" md:w-[40%] w-[80%] min-h-10 border border-slate-500 pl-4" />
+
           </div>
           <div className="  ring-red-700 w-full  flex justify-around flex-col md:flex-row md:gap-0 gap-9 items-center">
             <input  className=" md:w-[40%] w-[80%] min-h-10  border border-slate-500 pl-4" type="date" defaultValue={cdate} placeholder="Your NAme"/>
