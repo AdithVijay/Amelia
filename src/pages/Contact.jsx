@@ -1,12 +1,19 @@
 import React from "react";
 import Footer from "../component/Footer";
 
+import { FaInstagram } from "react-icons/fa6";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
+
+
 const Contact = () => {
   return (
     <><div className=" mt-4 flex justify-center  flex-col items-center gap-5  ">
-      <div className=" relative   flex gap-9  md:w-[80%] w-[85%]  flex-col md:flex-row      max-h-[40rem]  ">
-        <div className="left   relative   md:w-[40%] w-[95%] bg-[#F8F4EC]   ">
-          <div className="    m-7 mx-auto w-[89%] ">
+
+      <div className="    flex gap-9  md:w-[80%] w-[85%]  flex-col md:flex-row      max-h-[40rem]  ">
+        <div className="left   relative   md:w-[43%] w-[95%] bg-[#F8F4EC]   px-2   ">
+       
+
             <div className=" info  flex flex-col gap-3 ">
               <div className=" text-2xl lg:text-3xl   relative left-9 ">Contact Information</div>
               <div className=" text-lg w-[85%]   relative left-9 font-thin">
@@ -20,12 +27,14 @@ const Contact = () => {
               <div> info@amaliabeauty.com</div>
               <div> (629) 555-0129</div>
             </div>
-            <div className="icons flex relative   left-9  top-9 gap-5">
-              <span>*</span>
-              <span>*</span>
-              <span>*</span>
-              <span>*</span>
-            </div>
+
+            <div className="icons flex relative   left-9  gap-5 text-2xl  bottom-2 mt-9">
+              <span><FaInstagram/></span>
+              <span><FaSquareFacebook/></span>
+              <span><FaWhatsapp/></span>
+             
+       
+
           </div>
         </div>
 
