@@ -43,6 +43,7 @@ const Footer = () => {
                     <img className=' w-[200px]' src={logo} alt="" />
                 </div>
 
+
                 <div className='right md:w-[30%] w-[90%] text-pretty'>
                     <div className=' text-3xl pb-4'>
                         Contact Adress
@@ -62,6 +63,7 @@ const Footer = () => {
                     <div className=' mb-10'>
                     beautyspaamelia@gmail. com                    </div>
                 </div>
+
             </div>
         </div>
     </div>

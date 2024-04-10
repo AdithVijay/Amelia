@@ -19,10 +19,12 @@ const Slide = () => {
     ]
     const [first, setfirst] = useState(0)
     useEffect(() => {
+
         const timer=setTimeout(()=>{
             setfirst((prev)=>(prev+1)%slidedata.length)
         },5500)
         return () => clearTimeout(timer);
+
     }, [first])
     
 

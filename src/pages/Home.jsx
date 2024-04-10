@@ -44,6 +44,7 @@ const Home = () => {
         >
 
   <Card img={Hairwash} description={"HairCare"} />
+
   <Card img={Wax} description={"Waxing"} />
   <Card img={Skincare} description={"Skin Care"} />
   <Card img={mainicure} description={"Nail Treatments"} />
@@ -55,12 +56,14 @@ const Home = () => {
       </div>
       <Testimonial className=" " />
 
+
    
 
       <div className="flex justify-center relative top-20  pb-32 ">
         <div className=" md:text-4xl text-xl font-bold  ">Here's a Quick Video Introducing  <span className=' text-primary font-extrabold '> Us.</span></div>
       </div>
       <div className=" mb-10"><Vedio className=" "  /></div>
+
       <Footer/>
     </div>
   );

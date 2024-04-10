@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import card1 from "../assets/t1.jpg";
 import card2 from "../assets/t2.jpg";
 import card3 from "../assets/t3.jpg";
@@ -8,6 +9,7 @@ import pic4 from "../assets/t1.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+
 
 
 
@@ -68,6 +70,7 @@ function App() {
       ]
   };
   return (
+
     <div className='w-3/4 m-auto'>
       <div className="mt-20">
       <Slider {...settings}>
@@ -85,6 +88,7 @@ function App() {
           </div>
         ))}
       </Slider>
+
       </div>
       
     </div>
