@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react'
 import logo1 from "../assets/11.jpg";
 import logo2 from "../assets/s2.jpg";
 import logo3 from "../assets/s3.jpg";
-import { IoIosArrowDropleft } from "react-icons/io";
-import { IoIosArrowDropright } from "react-icons/io";
+import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 
 
 const Slide = () => {
@@ -38,8 +37,8 @@ const Slide = () => {
         <div className=' relative ring-neutral-900   w-[100%] lg:w-[100%] mx-auto  '>
           <img src={slidedata[first].img} alt=""  className=' w-[100%] mx-auto   object-cover   max-h-[40rem] ' />
           <span className=' flex absolute md:text-2xl  z-10 top-[45%]     justify-around gap-[40%]     my-auto    w-[100%]     text-slate-600 opacity-80   mix-blend-screen '>
-              <button onClick={plus} className=' relative text-2xl md:text-4xl  lg:text-5xl'><IoIosArrowDropleft  />  </button>
-              <button className=' text-2xl md:text-4xl  lg:text-5xl' onClick={minus}> <IoIosArrowDropright/> </button>
+              <button onClick={plus} className=' relative text-2xl md:text-4xl  lg:text-5xl'><HiChevronLeft  />  </button>
+              <button className=' text-2xl md:text-4xl  lg:text-5xl' onClick={minus}> <HiChevronRight/> </button>
           </span>
         </div>
     </div>

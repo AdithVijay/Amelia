@@ -7,6 +7,7 @@ import logo1 from "../assets/11.jpg";
 import logo2 from "../assets/s2.jpg";
 import logo3 from "../assets/s3.jpg";
 import logo4 from "../assets/cpl.jpg";
+import Footer from '../component/Footer';
 
 const Gallery = () => {
   return (
@@ -24,6 +25,7 @@ const Gallery = () => {
    <img src="https://www.thoughtco.com/thmb/vrWPIa5gM20NUbQdFa84M7i5wHs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-697389167-5a737ae0ba617700372d5569.jpg" alt=" " className=' ' />
    <img src="https://www.thoughtco.com/thmb/vrWPIa5gM20NUbQdFa84M7i5wHs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-697389167-5a737ae0ba617700372d5569.jpg" alt=" " className=' ' />
   </div>
+  <Footer />
     </div>
   )
 }

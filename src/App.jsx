@@ -10,7 +10,7 @@ import Booknow from './pages/Booknow';
 function App() {
  
   return (
-    < div className=' bg-nutral h-screen overflow-x-hidden'>
+    < div className='  h-screen overflow-x-hidden'>
       <BrowserRouter >
         <Navbar/>
         
