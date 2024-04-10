@@ -30,3 +30,9 @@
 ::-webkit-scrollbar:window-inactive {
     visibility: hidden;
 }
+.slick-prev:before, .slick-next:before {
+    color: rgb(0, 0, 0) !important;
+  }
+  .slick-slide > div{
+    margin: 0 10px;
+  }
