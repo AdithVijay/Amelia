@@ -37,7 +37,7 @@ const Slide = () => {
   return (
     <div className=' w-full select-none    '>
         <div className=' relative ring-neutral-900   w-[100%] lg:w-[100%] mx-auto  '>
-          <img src={slidedata[first].img} alt=""  className=' w-[100%] mx-auto   object-cover   max-h-[40rem] ' />
+          <img src={slidedata[first].img} alt="Amalia-Slider-Image"  className=' w-[100%] mx-auto   object-cover   max-h-[40rem] ' />
           <span className=' flex absolute md:text-2xl  z-10 top-[45%]     justify-around gap-[40%]     my-auto    w-[100%]     text-slate-600 opacity-80   mix-blend-screen '>
               <button onClick={plus} className=' relative text-2xl md:text-4xl  lg:text-5xl'><HiChevronLeft  />  </button>
               <button className=' text-2xl md:text-4xl  lg:text-5xl' onClick={minus}> <HiChevronRight/> </button>

@@ -70,7 +70,7 @@ const Contact = () => {
           <button className=" bg-black  text-white w-[20%] h-9 myfont  ">Send</button>
         </div>
       </div>
-      <div className="  mt-10 w-full md:w-[70%] "><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.4243594028235!2d76.57542750786769!3d9.384100783296148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0625ceb946994b%3A0x7cfe253b3890afb3!2sAmelia%20Spa%20%26%20Unisex%20Makeup%20Studio!5e0!3m2!1sen!2sin!4v1710147411769!5m2!1sen!2sin" className="w-full min-h-96 pb-6"></iframe></div>
+      <div className="  md:mt-10 mt-5 md:mb-10 mb-5 p-5 w-full md:w-[70%] "><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.4243594028235!2d76.57542750786769!3d9.384100783296148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0625ceb946994b%3A0x7cfe253b3890afb3!2sAmelia%20Spa%20%26%20Unisex%20Makeup%20Studio!5e0!3m2!1sen!2sin!4v1710147411769!5m2!1sen!2sin" className="w-full min-h-96 pb-6"></iframe></div>
     </div><Footer /></>
   );
 };
