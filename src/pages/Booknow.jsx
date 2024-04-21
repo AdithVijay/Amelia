@@ -1,28 +1,66 @@
 import React, { useState } from "react";
 import Footer from "../component/Footer";
 import DatePicker from "react-datepicker";
-
+import emailjs from '@emailjs/browser';
 import "react-datepicker/dist/react-datepicker.css";
 
-// function CustomDatePickerInput({ value, onClick }) {
-//   return (
-//     <input
-//       type="text"
-//       value={value}
-//       onClick={onClick}
-//       style={{ width: '800px' }} // Set the desired width
-//     />
-//   );
-// }
 const Booknow = () => {
-  const currentDate = new Date();
-  const [cdate, setcdate] = useState(new Date());
   const today = new Date();
+  const [formData, setFormData] = useState({
+    name: "",
+    contactNumber: "",
+    email: "",
+    serviceName: "",
+    appointmentDate: new Date(),
+    notes: ""
+  });
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      service: formData.service,
+      phone: formData.phone,
+      message: formData.message
+    };
+    
+    emailjs
+      .send('service_xjfg1zo', 'template_f6k5ui9', {
+        ...templateParams,
+      }, {
+        publicKey: 'goPXpa2kXWzvdUzT9',
+      })
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          alert('Appointment Booked Successfully');
+          setFormData({
+            name: "",
+            contactNumber: "",
+            email: "",
+            serviceName: "",
+            appointmentDate: new Date(),
+            notes: ""
+          });
+        },
+        (err) => {
+          console.log('FAILED...', err);
+        },
+      );
+    // Here you can do something with the form data, like sending it to a backend server
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
   const minTime = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 8, 0, 0);
   const maxTime = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 21, 0, 0);
-
-  console.log(cdate.toDateString());
-  const [startDate, setStartDate] = useState(new Date());
   return (
     <div className="  ">
       <div className=" p-1  flex flex-col items-center w-[80%] mx-auto gap-20  shadow-2xl shadow-orange-200 m-10 mb-24 md:mt-24 ">
@@ -33,65 +71,74 @@ const Booknow = () => {
           </div>
         </div>
 
-        <div className=" ring-black w-full flex flex-col items-center gap-9">
+        <form onSubmit={handleFormSubmit} className=" ring-black w-full flex flex-col items-center gap-9">
           <div className="  ring-red-700 w-full flex justify-around flex-col md:flex-row md:gap-0 gap-9 items-center">
             <input
               className=" md:w-[40%] w-[80%] min-h-10 border border-slate-500  pl-4"
               type="text"
               placeholder="Your Name"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
             />
             <input
               className=" md:w-[40%] w-[80%] min-h-10 border border-slate-500 pl-4"
               type="tel"
               placeholder="Contact Number"
+              name="contactNumber"
+              value={formData.contactNumber}
+              onChange={handleInputChange}
             />
           </div>
           <div className="  ring-red-700 w-full flex justify-around flex-col md:flex-row md:gap-0 gap-9 items-center ">
             <input
               className=" md:w-[40%] w-[80%] min-h-10  border border-slate-500 pl-4"
               type="email"
-              placeholder="email"
+              placeholder="Email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
             />
             <input
               type="text"
               placeholder="Service name"
               className=" md:w-[40%] w-[80%] min-h-10 border border-slate-500 pl-4"
+              name="serviceName"
+              value={formData.serviceName}
+              onChange={handleInputChange}
             />
           </div>
           <div className="  ring-red-700  w-[80%]  flex justify-around flex-col md:flex-row md:gap-0 gap-9 items-center relative 2xl:left-[22rem] xl:left-[18rem] md:left-[12rem]  ">
-            {/* <input  className=" md:w-[40%] w-[80%] min-h-10  border border-slate-500 pl-4" type="date" defaultValue={cdate} /> */}
             <DatePicker
               wrapperClassName="datePicker"
               showIcon
-         
               showTimeSelect
-              selected={startDate}
-              onChange={(date) => setStartDate(date)}
-              minDate={currentDate}
+              selected={formData.appointmentDate}
+              onChange={(date) => setFormData({ ...formData, appointmentDate: date })}
+              minDate={new Date()}
               minTime={minTime}
               maxTime={maxTime}
               dateFormat="MMMM d, yyyy h:mm aa"
               customInput={
                 <input  
                   type="text"
-                  // value={value}
-                  // onClick={onClick}
                   className=" md:w-[40%] w-[100%] min-h-10  border border-slate-500 pl-4 relative"
-                  // Set the desired width
                 />
               }
             />
-
           </div>
           <input
             className=" w-[80%] min-h-10 border border-slate-500 mb-10 px-5"
             type="text"
             placeholder="Any Notes For Us"
+            name="notes"
+            value={formData.notes}
+            onChange={handleInputChange}
           />
-        </div>
-        <button className=" relative md:p-3 p-2 md:text-2xl -top-20 transition-all duration-300 active:scale-95 hover:scale-125 bg-black px-5 text-white">
-          Book Now
-        </button>
+          <button className=" relative md:p-3 -top-2 p-2 md:text-2xl  transition-all duration-300 active:scale-95 rounded-md hover:scale-[102%] bg-black px-5 text-white" type="submit">
+            Book Now
+          </button>
+        </form>
       </div>
       <Footer />
     </div>

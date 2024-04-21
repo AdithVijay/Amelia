@@ -49,17 +49,17 @@ const Home = () => {
         </div>
       </div>
       <div className="flex justify-center relative top-10">
-        <div className="md:text-4xl text-2xl font-bold">
+        <div className="md:text-4xl text-2xl ">
           {" "}
           What Our Customers{" "}
-          <span className="text-primary font-extrabold">Speak</span>
+          <span className="text-primary">Speak</span>
         </div>
       </div>
       <Testimonial />
       <div className="flex justify-center relative top-20 pb-32">
-        <div className="md:text-4xl text-xl font-bold">
+        <div className="md:text-4xl text-2xl ">
           Here's a Quick Video Introducing{" "}
-          <span className="text-primary font-extrabold">Us.</span>
+          <span className="text-primary  ">Us.</span>
         </div>
       </div>
       <div className="mb-10">

@@ -11,7 +11,7 @@
 
 
     font-family: "Nanum Gothic", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
 
 
@@ -23,8 +23,8 @@
   }
   .myfont{
   font-family: "Nanum Gothic", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+  /* font-weight: 600; */
+  /* font-style: normal; */
   }
   /* input[type="time"]:before {
     content: 'HH:mm ss';
@@ -43,9 +43,6 @@
   padding-left: 1rem; /* 4px * 1 */
 }
 
-.react-datepicker {
-  /* width: 200px; Set the desired width */
-}
 
 .glass{background: rgba(255, 255, 255, 0.33);
 border-radius: 16px;

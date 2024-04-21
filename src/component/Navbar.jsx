@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className={`flex md:flex-row md:justify-between             `}>
         <div className=" relative md:top-2 top-3  xl:left-20 flex-shrink-0  ">
           <NavLink to="/" >
-            <img src={logo} className=" flex-shrink-0   md:h-16 h-8 "></img>
+            <img src={logo} alt="Amalia Thiruvalla" className=" flex-shrink-0   md:h-16 h-8 "></img>
           </NavLink>{" "}
           {/* this is the left side AMELIA LOGO */}
         </div>
