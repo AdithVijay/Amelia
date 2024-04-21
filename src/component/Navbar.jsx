@@ -17,11 +17,11 @@ const Navbar = () => {
         setopen((prev)=>!prev)
     }
   return (
-    <header className={`shadow-md fixed w-full md:h-20  h-14  backdrop-blur-3xl  z-20 ${open?" h-48 select-none":""} ` }  >
+    <header className={`shadow-md fixed w-full md:h-20  h-14 bg-white z-20 ${open?"  h-52 select-none":""} ` }  >
       <div className={`flex md:flex-row md:justify-between             `}>
         <div className=" relative md:top-2 top-3  xl:left-20 flex-shrink-0  ">
           <NavLink to="/" >
-            <img src={logo} className=" flex-shrink-0   md:h-16 h-8 "></img>
+            <img src={logo} alt="Amalia Thiruvalla" className=" flex-shrink-0   md:h-16 h-8 "></img>
           </NavLink>{" "}
           {/* this is the left side AMELIA LOGO */}
         </div>
@@ -53,12 +53,12 @@ const Navbar = () => {
         </nav>
         
       </div>
-      <div className={`${open?" visible flex  flex-col items-center  m-6 text-xl":" invisible"}`} >
+      <div className={`${open?" visible pb-10  flex  flex-col items-center  m-6 text-xl":" invisible"}`} >
       <NavLink to="/" onClick={menu} className={`${mylocation === "/" ? "text-primary" : ""}`}>Home </NavLink>
       <NavLink to="/services" onClick={menu}   className={`${mylocation === "/services" ? "text-primary" : ""}`}>Service </NavLink>
       <NavLink to="/gallery" onClick={menu}   className={`${mylocation === "/gallery" ? "text-primary" : ""}`}>Gallery </NavLink>
       <NavLink to="/contact"  onClick={menu}  className={`${mylocation === "/contact" ? "text-primary" : ""}`}>Contact us </NavLink>
-      <NavLink to="/contact"  onClick={menu}  className={`${mylocation === "/booknow" ? "text-primary" : ""}`}>Book Now </NavLink>
+      <NavLink to="/booknow"  onClick={menu}  className={`${mylocation === "/booknow" ? "text-primary" : ""}`}>Book Now </NavLink>
       </div>
     </header>
   );

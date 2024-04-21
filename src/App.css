@@ -11,7 +11,7 @@
 
 
     font-family: "Nanum Gothic", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
 
 
@@ -23,9 +23,25 @@
   }
   .myfont{
   font-family: "Nanum Gothic", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+  /* font-weight: 600; */
+  /* font-style: normal; */
   }
+  /* input[type="time"]:before {
+    content: 'HH:mm ss';
+    color: #9d9d9d;
+    position: absolute;
+    background: #fff;
+    width: 90px;
+} */
+/* For .datePicker */
+.datePicker {
+  width: 100%;
+  min-height: 2.5rem; 
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000; /* Slate 500 */
+  padding-left: 1rem; /* 4px * 1 */
+}
 
 
 .glass{background: rgba(255, 255, 255, 0.33);

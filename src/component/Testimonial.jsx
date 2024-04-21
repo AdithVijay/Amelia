@@ -77,7 +77,7 @@ function App() {
         {data.map((d) => (
           <div key={d.name} className="h-[500px] text-black rounded-xl">
             <div className='h-56 flex justify-center items-center rounded-t-xl'>
-              <img src={d.img} alt="" className="h-44 w-44 rounded-full object-cover"/>
+              <img src={d.img} alt="Amalia review icon" className="h-44 w-44 rounded-full object-cover"/>
             </div>
 
             <div className="flex flex-col items-center justify-center gap-4 p-4">
