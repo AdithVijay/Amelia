@@ -26,15 +26,22 @@ const Contact = () => {
     };
     
     emailjs
-      .send('service_xjfg1zo', 'template_f6k5ui9', {
-        ...templateParams,
-        to_email: 'itsarjunsreekumar@gmail.com'
-      }, {
-        publicKey: 'goPXpa2kXWzvdUzT9',
-      })
+    .send('service_6ce2nhl', 'template_xb7lnol', {
+      ...templateParams,
+    }, {
+      publicKey: 'SbskET1zFJPqDlvqA',
+    })
       .then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);
+          alert('Message Sent Successfully');
+          setFormData({
+            name: "",
+            email: "",
+            service: "",
+            phone: "",
+            message: ""
+          });
         },
         (err) => {
           console.log('FAILED...', err);

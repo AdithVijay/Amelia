@@ -36,7 +36,8 @@ const Footer = () => {
               Amelia Beauty
             </div>
             <div className=''>
-              Experience the joy of savouring healthy, hygienic foods at Burger Lounge by Grapa Foods. Our excellent burgers, crafted with premium ingredients, promise an exceptional culinary experience. Immerse yourself in quality, sustainability, and the pure delight of every bite. Taste the difference and embrace the happiness of dining at Grapa Burger Lounge.
+             
+Experience the allure of beauty and relaxation at Amelia Beauty Parlour. Step into a world of tranquility and indulge in our luxurious treatments, meticulously crafted to enhance your natural beauty. Our dedicated team uses only the finest products and techniques to ensure you leave feeling rejuvenated and refreshed. Discover the essence of elegance and embrace the bliss of every visit to Amelia Beauty Spa.
             </div>
           </div>
 
@@ -55,7 +56,7 @@ const Footer = () => {
               call us
             </div>
             <div>
-              9447271120
+            +91-8943359422
             </div>
             <div className=' pt-3'>
               email

@@ -10,9 +10,9 @@ const Slide = () => {
         {
             img:logo1
         },
-        {
-            img:logo2
-        },
+        // {
+        //     img:logo2
+        // },
         {
             img:logo3
         },

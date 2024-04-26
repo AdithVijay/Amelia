@@ -10,7 +10,7 @@ const Booknow = () => {
     name: "",
     contactNumber: "",
     email: "",
-    serviceName: "",
+    serviceName: localStorage.getItem('service') || "",
     appointmentDate: new Date(),
     notes: ""
   });
@@ -18,19 +18,33 @@ const Booknow = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
+    const appointmentDate = new Date(formData.appointmentDate);
+const formattedDate = new Intl.DateTimeFormat('en-GB', {
+  day: '2-digit',
+  month: '2-digit',
+  year: 'numeric'
+}).format(appointmentDate);
+
+const formattedTime = new Intl.DateTimeFormat('en-US', {
+  hour: 'numeric',
+  minute: 'numeric',
+  hour12: true
+}).format(appointmentDate);
+
     const templateParams = {
       name: formData.name,
       email: formData.email,
-      service: formData.service,
-      phone: formData.phone,
-      message: formData.message
+      service: formData.serviceName,
+      phone: formData.contactNumber,
+      message: formData.notes,
+      appointmentDate: `${formattedDate} ${formattedTime}`
     };
     
     emailjs
-      .send('service_xjfg1zo', 'template_f6k5ui9', {
+      .send('service_6ce2nhl', 'template_8u86hne', {
         ...templateParams,
       }, {
-        publicKey: 'goPXpa2kXWzvdUzT9',
+        publicKey: 'SbskET1zFJPqDlvqA',
       })
       .then(
         (response) => {
