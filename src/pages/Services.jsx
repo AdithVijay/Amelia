@@ -6,7 +6,7 @@ import Card from '../component/Card';
 import Hair from '../component/Hair';
 import MyBook from '../component/MyBook';
 import Footer from '../component/Footer';
-
+import Priceing from '../component/Priceing';
 const Services = () => {
   return (
     <>
@@ -20,12 +20,15 @@ const Services = () => {
       
         </div>
         <Hair />
+        
+        <Priceing />
         <div className="flex justify-center m-12">
           <div className=" md:text-4xl text-2xl font-bold  ">Explore Our Full Beauty <span className=' text-primary font-extrabold '>Services</span></div>
         </div>
         <div className='mb-14'>
           <MyBook id="book" />
         </div>
+
       </main>
       <Footer />
     </>
