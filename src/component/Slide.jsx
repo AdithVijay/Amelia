@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import logo1 from "../assets/11.jpg";
-import logo2 from "../assets/s2.jpg";
+import logo2 from "../assets/gallery9.jpg";
 import logo3 from "../assets/s3.jpg";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 
@@ -10,9 +10,9 @@ const Slide = () => {
         {
             img:logo1
         },
-        // {
-        //     img:logo2
-        // },
+         {
+            img:logo2
+        },
         {
             img:logo3
         },
