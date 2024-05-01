@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import logo1 from "../assets/11.jpg";
-import logo2 from "../assets/gallery9.jpg";
+import logo2 from "../assets/gallery5.jpg";
 import logo3 from "../assets/s3.jpg";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 

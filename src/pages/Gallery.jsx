@@ -15,14 +15,13 @@ import gallery9 from "../assets/gallery9.jpg";
 import gallery8 from "../assets/gallery8.jpg";
 import gallery2 from "../assets/gallery2.jpg";
 import gal22 from "../assets/gal22.jpg";
-import gal23 from "../assets/gal23.jpg";
+import gal23 from "../assets/gal99.jpg";
 import Footer from '../component/Footer';
 
 const Gallery = () => {
   return (
     <div>
        <div  className=' grid md:grid-cols-3  grid-flow-row-dense gap-4 mx-10 mt-5 mb-16 ' >
-   {/* {isloaded && (<InstagramEmbed url="https://www.instagram.com/_viishnu_santhosh?igsh=NzIycHd3YW52NnVk" width={650} />)} */}
    <img src={ card2} alt="Amalia beauty thiruvalla" className='' />
    <img src={gal23} alt="Amalia beauty thiruvalla" className='' />
    <img src={card3} alt="Amalia beauty thiruvalla" className='' />
