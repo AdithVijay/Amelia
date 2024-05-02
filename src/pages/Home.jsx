@@ -48,14 +48,15 @@ const Home = () => {
           <Card img={mainicure} description={"Nail Treatments"} alt={"Manicure Image"} />
         </div>
       </div>
-      <div className="flex justify-center relative top-10">
+      <div className="flex flex-col items-center justify-center relative top-10">
         <div className="md:text-4xl text-2xl ">
           {" "}
           What Our Customers{" "}
           <span className="text-primary">Speak</span>
         </div>
+        <Testimonial />
       </div>
-      <Testimonial />
+     
       <div className="flex justify-center relative top-20 pb-32">
         <div className="md:text-4xl text-2xl ">
           Here's a Quick Video Introducing{" "}

@@ -129,8 +129,7 @@ function App() {
         {data.map((d) => (
           <div key={d.name} className="bg-white md:h-[500px] h-[620px] text-black rounded-xl     ">
             <div className='h-56 flex justify-center items-center rounded-t-xl'>
-              <div  alt="" className=" w-32 h-32 pt-8 font-bold text-6xl  text-white  rounded-full flex justify-center"  style={{ backgroundColor: d.bgColor }}
->
+              <div  alt="" className=" w-32 h-32 pt-8 font-bold text-6xl  text-white  rounded-full flex justify-center"  style={{ backgroundColor: d.bgColor }}>
 
                 {d.img}
                 
