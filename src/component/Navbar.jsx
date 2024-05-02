@@ -9,7 +9,7 @@ const Navbar = () => {
     const [open, setopen] = useState(false)
     useEffect(() => {
         setmylocation(location.pathname)
-       
+    
         // window.location.pathname === "/services" ? document.title = "Services" : window.location.pathname === "/gallery" ? document.title = "Gallery" : window.location.pathname === "/contact" ? document.title = "Contact" : document.title = "Home"
     }, [location.pathname])
     function menu(){

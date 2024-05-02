@@ -5,7 +5,11 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 
+
 const Contact = () => {
+
+
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -62,7 +66,7 @@ const Contact = () => {
     <>
       <div className=" mt-4 flex justify-center  flex-col items-center gap-5  ">
 
-        <div className="    flex gap-9  md:w-[80%] w-[85%]  flex-col md:flex-row      max-h-[40rem]  ">
+        <div  className="    flex gap-9  md:w-[80%] w-[85%]  flex-col md:flex-row      max-h-[40rem]  ">
           <div className="left   relative   md:w-[43%] w-[95%] bg-[#F8F4EC]   px-2   ">
 
             <div className=" info  flex flex-col gap-3 ">

@@ -5,12 +5,12 @@ export default function Priceing() {
     <section class="bg-white :bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 :text-white">Choose the Best Package for you </h2>
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 :text-white">Choose the <span className=' text-primary'>Best </span>Package for you </h2>
             <p class="mb-5 font-light text-gray-500 sm:text-xl :text-gray-400">Explore our range of bridal makeup packages tailored to suit every style and budget. From our basic package for a simple, elegant look to our top-tier package offering a complete bridal transformation, find the perfect fit for your special day.</p>
         </div>
         <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
          
-            <div class="flex flex-col p-6 mx-auto max-w-lg  w-[340px]  text-center text-gray-900 h-[30rem] bg-white rounded-lg border  border-orange-300 shadow :border-gray-600 xl:p-8 :bg-gray-800 :text-white">
+            <div class="flex flex-col  shadow-primary hover:scale-[100%] transition-all duration-1000 p-6 mx-auto max-w-lg  w-[340px]  text-center text-gray-900 h-[30rem] bg-white rounded-lg border  border-orange-300 shadow  :border-gray-600 xl:p-8 :bg-gray-800 :text-white">
                 <h3 class="mb-4 text-2xl font-semibold">Essential Elegance</h3>
                 <p class="font-light text-gray-500 sm:text-lg :text-gray-400"> </p>
                 {/* <div class="flex justify-center items-baseline my-8">
@@ -52,7 +52,7 @@ export default function Priceing() {
                 <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center :text-white  :focus:ring-primary-900">Get started</a>
             </div>
            
-            <div class="flex flex-col p-6 mx-auto max-w-lg w-[340px] text-center text-gray-900 h-[30rem] bg-white rounded-lg border  border-orange-300 shadow :border-gray-600 xl:p-8 :bg-gray-800 :text-white">
+            <div class="flex flex-col   shadow-primary hover:scale-[100%] transition-all duration-1000  p-6 mx-auto max-w-lg w-[340px] text-center text-gray-900 h-[30rem] bg-white rounded-lg border  border-orange-300 shadow :border-gray-600 xl:p-8 :bg-gray-800 :text-white">
                 <h3 class="mb-4 text-2xl font-semibold">Classic Charm</h3>
                 <p class="font-light text-gray-500 sm:text-lg :text-gray-400"> </p>
                 {/* <div class="flex justify-center items-baseline my-8">
@@ -98,7 +98,7 @@ export default function Priceing() {
                 <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center :text-white  :focus:ring-primary-900">Get started</a>
             </div>
             
-            <div class="flex flex-col p-6 mx-auto max-w-lg w-[340px] text-center text-gray-900 h-[30rem] bg-white rounded-lg border  border-orange-300 shadow :border-gray-600 xl:p-8 :bg-gray-800 :text-white ">
+            <div class="flex flex-col  shadow-primary hover:scale-[100%] transition-all duration-1000  p-6 mx-auto max-w-lg w-[340px] text-center text-gray-900 h-[30rem] bg-white rounded-lg border  border-orange-300 shadow :border-gray-600 xl:p-8 :bg-gray-800 :text-white ">
                 <h3 class="mb-4 text-2xl font-semibold">Pro Perfection</h3>
                 {/* <p class="font-light text-gray-500 sm:text-lg :text-gray-400"> ghts.</p> */}
                 {/* <div class="flex justify-center items-baseline my-8">
