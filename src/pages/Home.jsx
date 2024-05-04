@@ -57,13 +57,13 @@ const Home = () => {
         <Testimonial />
       </div>
      
-      <div className="flex justify-center relative top-20 pb-32">
-        <div className="md:text-4xl text-2xl ">
+      <div className="flex justify-center relative top-20 pb-32 items-center text-center pt-20">
+        <div className="md:text-4xl text-2xl  ">
           Here's a Quick Video Introducing{" "}
-          <span className="text-primary  ">Us.</span>
+          <span className="text-primary ">Us.</span>
         </div>
       </div>
-      <div className="mb-10">
+      <div className="mb-10 md:mb-20">
         <Vedio />
       </div>
       <Footer />

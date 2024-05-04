@@ -127,7 +127,7 @@ function App() {
       <Slider {...settings}>
    
         {data.map((d) => (
-          <div key={d.name} className="bg-white md:h-[500px] h-[620px] text-black rounded-xl     ">
+          <div key={d.name} className="bg-white md:h-[550px] h-[620px] text-black rounded-xl     ">
             <div className='h-56 flex justify-center items-center rounded-t-xl'>
               <div  alt="" className=" w-32 h-32 pt-8 font-bold text-6xl  text-white  rounded-full flex justify-center"  style={{ backgroundColor: d.bgColor }}>
 
@@ -136,7 +136,7 @@ function App() {
               </div>
             </div>
 
-            <div className="flex flex-col items-center justify-center gap-4  md:h-auto pb-10      p-4">
+            <div className="flex flex-col items-center justify-center gap-4  md:h-auto pb-10      p-3">
               <p className="text-xl text-[#8E8E8E]  font-semibold">{d.name}</p>
               <p className="text-center text-[#8E8E8E] ">{d.review}</p>
               <div className="">
@@ -171,7 +171,7 @@ const data = [
   {
     name: `Hanna Jacob`,
     img: "H",
-    review: `Best saloon in Thiruvalla. Excellent service and great customer friendly environment . I did hydra facial and hair Botox treatment. Both services were very effective. Also it is a mother and child friendly salon. I came with my 2 year old daughter and the staff took care of my daughter so well . I highly recommend this salon to everyone especially for mothers.`,
+    review: `Best saloon in Thiruvalla. Excellent service and great customer friendly environment . Both services were very effective. Also it is a mother and child friendly salon. I came with my 2 year old daughter and the staff took care of my daughter so well . I highly recommend this salon to everyone especially for mothers.`,
     value: 5,
     bgColor: darkenColor("#FFD700", 0.2) // Darken by 20%
     
@@ -206,9 +206,10 @@ const data = [
     bgColor: darkenColor("#FF4500", 0.2) // Darken by 20%
   },
   {
-    name: `Geeta Kumari`,
-    img: "G",
-    review: `It's one of the best beauty salon in thiruvalla. And their service are too good. Personally I love it..`,
+    name: `Ron Thomas`,
+    img: "R",
+    review: `We had a great experience at Amelia. My pedicure was top-notch by Mrs. Bindu, We was really impressed with the quality of the service.
+    We had a great experience at the salon! The staff were so friendly and welcoming.`,
     value:5,
     bgColor: darkenColor("#FF4500", 0.2) // Darken by 20%
   },
