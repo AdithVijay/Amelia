@@ -14,6 +14,8 @@ const Booknow = () => {
     appointmentDate: new Date(),
     notes: ""
   });
+  console.log("adith");
+  
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
